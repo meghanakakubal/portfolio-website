@@ -12,6 +12,8 @@ body{
 	background-color:#3a383b;
 }
 
+
+
 .topnav {
 	position:relative;
 	background-color:#3a383b;
@@ -58,14 +60,18 @@ c1{
 
 s1{
 	font-size:25px;
+	color:#885ca1;
 }
 
 s2{
 	font-size:35px;
-	color:#885ca1;
-	background-color:white;
-	padding-left:2%;
+	color:white;
+	outline:3px groove white;
+	padding-left:2%;	
 	padding-right:2%;
+	padding-top:1%;
+	padding-bottom:1%;
+	text-decoration:none;
 }
 
 
@@ -242,9 +248,23 @@ transition: opacity .2s,visibility .2s;
 	margin-bottom:2%;
   }
 
+  .project-link{
+	float:none;
+	color: #58326e;
 
+	
 
+	padding-left:2%;
+	padding-right:2%;
+	text-decoration:  none;
+	font-size: 18px;
+	font-family: monospace;
+	font-weight: 40;
 
+}
+.project-details a:hover {
+	color: white;
+}
 
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -338,6 +358,40 @@ transition: opacity .2s,visibility .2s;
   }
 
 
+/*----------------------------------------------------------------------------------------------------*/
 
+@media screen and (max-width: 720px) {
+	/*changes reflects on screen with a width of 720px and below*/
 
+	.all-projects-container {
+		flex-direction: column;
+	  }
+	
+	.project-container project-card {
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-content:center;
+		align-items:center;
+		width: 25rem;
+	}
+
+	.project-pic{
+		width:80%;
+		justify-self:center;
+		align-self:center;
+		margin-left:10%;
+		margin-right:10%;
+		margin-top:5%;
+	}
+
+	.project-details{
+		width:100%;
+	}
+
+	.project-title{
+		margin-left:8%;
+		margin-right:8%;
+	}
+  }
 
